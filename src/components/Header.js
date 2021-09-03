@@ -13,7 +13,13 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Header = () => {
   return (
-    <Flex justify="space-around" boxShadow="md" p="2">
+    <Flex
+      justify="space-around"
+      boxShadow="xs"
+      p="2"
+      borderBottom="1px"
+      borderBottomColor="gray.400"
+    >
       <Center p="2">
         <Link href="/home">
           <Heading fontSize="3xl" textTransform="uppercase">
