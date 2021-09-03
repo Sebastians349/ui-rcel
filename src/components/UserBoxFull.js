@@ -1,19 +1,16 @@
 import React from 'react';
 import { Wrap, VStack, WrapItem, Center, Text } from '@chakra-ui/layout';
-import UserName from './UserName';
-import UserId from './UserId';
 
-const UserBox = () => {
+const UserBoxFull = () => {
   return (
     <Wrap spacing="30px">
       <WrapItem>
         <Center w="180px" h="auto" boxShadow="md" borderRadius="xl">
-          <VStack padding="5">
-            <Text fontWeight="black" fontSize="md" textTransform="uppercase">
+          <VStack>
+            <Text fontWeight="bold" fontSize="xs" textTransform="uppercase">
               Usuario
             </Text>
-            <UserId />
-            <UserName />
+            <Text>259999994</Text>
           </VStack>
         </Center>
       </WrapItem>
@@ -21,4 +18,4 @@ const UserBox = () => {
   );
 };
 
-export default UserBox;
+export default UserBoxFull;
