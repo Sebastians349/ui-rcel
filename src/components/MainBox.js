@@ -1,6 +1,6 @@
 import React from 'react';
 import { VStack, Center, Heading, Wrap, WrapItem } from '@chakra-ui/layout';
-import UserName from './UserName';
+import UserNameBtn from './UserNameBtn';
 const MainBox = () => {
   return (
     <Wrap>
@@ -15,7 +15,7 @@ const MainBox = () => {
             >
               Seleccione la empresa a representar
             </Heading>
-            <UserName />
+            <UserNameBtn />
           </VStack>
         </Center>
       </WrapItem>
