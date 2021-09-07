@@ -9,7 +9,11 @@ const UserBox = () => {
       <WrapItem>
         <Center w="180px" h="auto" boxShadow="md" borderRadius="xl">
           <VStack padding="5">
-            <Text fontWeight="black" fontSize="md" textTransform="uppercase">
+            <Text
+              fontWeight="semibold"
+              fontSize="smaller"
+              textTransform="uppercase"
+            >
               Usuario
             </Text>
             <UserId />

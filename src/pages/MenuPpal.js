@@ -8,7 +8,6 @@ const MenuPpal = () => {
   return (
     <Box h="100vh">
       <Header />
-      <Main />
       <Footer />
     </Box>
   );
