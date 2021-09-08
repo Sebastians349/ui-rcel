@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <Stack
       direction={['column', 'row']}
-      spacing="24px"
-      h="75vh"
+      spacing="15px"
+      padding={4}
       justifyContent="space-evenly"
       alignItems="center"
     >

@@ -8,28 +8,16 @@ const UserBoxFull = () => {
     <Wrap spacing="30px">
       <WrapItem>
         <Center w="180px" h="auto" boxShadow="md" borderRadius="xl">
-          <VStack>
-            <Text
-              fontWeight="semibold"
-              fontSize="x-small"
-              textTransform="uppercase"
-            >
+          <VStack padding={1}>
+            <Text fontWeight="semibold" fontSize="xs" textTransform="uppercase">
               Usuario
             </Text>
             <UserId />
-            <Text
-              fontWeight="semibold"
-              fontSize="x-small"
-              textTransform="uppercase"
-            >
+            <Text fontWeight="semibold" fontSize="xs" textTransform="uppercase">
               Representando
             </Text>
             <UserId />
-            <Text
-              fontWeight="semibold"
-              fontSize="x-small"
-              textTransform="uppercase"
-            >
+            <Text fontWeight="semibold" fontSize="xs" textTransform="uppercase">
               Dependencia
             </Text>
             <AgencyName />

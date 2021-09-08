@@ -14,7 +14,6 @@ const Footer = () => {
   return (
     <Stack
       direction={['column', 'row']}
-      h="10vh"
       spacing="24px"
       borderTop="1px"
       borderTopColor="gray.400"
@@ -25,7 +24,7 @@ const Footer = () => {
       <Text fontSize="small" fontWeight="semibold">
         {fecha}
       </Text>
-      <Text fontSize="small" fontWeight="semibold">
+      <Text fontSize="small" fontWeight="semibold" textAlign="center">
         Autenticado por Administración General De Ingresos Públicos
       </Text>
     </Stack>
