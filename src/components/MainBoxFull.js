@@ -3,9 +3,7 @@ import { VStack, Center, Wrap, WrapItem } from '@chakra-ui/layout';
 import BtnComprobantes from './ui/BtnComprobantes';
 import BtnConsultas from './ui/BtnConsultas';
 import BtnGenerico from './ui/BtnGenerico';
-const botones = {
-  datos: 'caca',
-};
+
 const MainBoxFull = props => {
   return (
     <Wrap>
@@ -14,8 +12,8 @@ const MainBoxFull = props => {
           <VStack>
             <BtnComprobantes />
             <BtnConsultas />
-            <BtnGenerico name={datos} />
-            <BtnGenerico />
+            <BtnGenerico name="Datos Adicionales del comprobante" />
+            <BtnGenerico name="ABM - Puntos de venta" />
             <BtnGenerico />
           </VStack>
         </Center>

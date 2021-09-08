@@ -14,7 +14,7 @@ const BtnGenerico = props => {
         boxShadow="xs"
         fontSize="sm"
       >
-        {props.datos}
+        {props.name}
       </Button>
     </Stack>
   );
