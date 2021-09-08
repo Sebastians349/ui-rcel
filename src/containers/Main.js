@@ -13,6 +13,7 @@ const Main = () => {
       padding={4}
       justifyContent="space-evenly"
       alignItems="center"
+      height="85vh"
     >
       <UserBoxFull />
       <MainBoxFull />

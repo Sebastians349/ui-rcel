@@ -1,22 +1,23 @@
 import React from 'react';
 import { Button, Stack } from '@chakra-ui/react';
-import { GoNote } from 'react-icons/go';
+import { GoSearch } from 'react-icons/go';
 
-const BtnComprobantes = () => {
+const BtnConsultas = () => {
   return (
     <Stack direction="row" spacing={4}>
       <Button
         width="300px"
-        leftIcon={<GoNote />}
+        textAlign="left"
+        leftIcon={<GoSearch />}
         colorScheme="gray"
         variant="outline"
-        boxShadow="xs"
+        boxShadow="sm"
         fontSize="sm"
       >
-        Generar comprobantes
+        Consultas
       </Button>
     </Stack>
   );
 };
 
-export default BtnComprobantes;
+export default BtnConsultas;
