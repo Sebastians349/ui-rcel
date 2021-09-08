@@ -2,6 +2,8 @@ import React from 'react';
 import { Stack } from '@chakra-ui/layout';
 import MainBox from '../components/MainBox';
 import UserBox from '../components/UserBox';
+import UserBoxFull from '../components/UserBoxFull';
+import MainBoxFull from '../components/MainBoxFull';
 
 const Main = () => {
   return (
@@ -12,8 +14,8 @@ const Main = () => {
       justifyContent="space-evenly"
       alignItems="center"
     >
-      <UserBox />
-      <MainBox />
+      <UserBoxFull />
+      <MainBoxFull />
     </Stack>
   );
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Wrap, VStack, WrapItem, Center, Text } from '@chakra-ui/layout';
+import UserId from './UserId';
+import AgencyName from './AgencyName';
 
 const UserBoxFull = () => {
   return (
@@ -7,10 +9,30 @@ const UserBoxFull = () => {
       <WrapItem>
         <Center w="180px" h="auto" boxShadow="md" borderRadius="xl">
           <VStack>
-            <Text fontWeight="bold" fontSize="xs" textTransform="uppercase">
+            <Text
+              fontWeight="semibold"
+              fontSize="x-small"
+              textTransform="uppercase"
+            >
               Usuario
             </Text>
-            <Text>259999994</Text>
+            <UserId />
+            <Text
+              fontWeight="semibold"
+              fontSize="x-small"
+              textTransform="uppercase"
+            >
+              Representando
+            </Text>
+            <UserId />
+            <Text
+              fontWeight="semibold"
+              fontSize="x-small"
+              textTransform="uppercase"
+            >
+              Dependencia
+            </Text>
+            <AgencyName />
           </VStack>
         </Center>
       </WrapItem>

@@ -1,11 +1,15 @@
 import React from 'react';
 import { Text } from '@chakra-ui/layout';
-import { Button, Link, ExternalLinkIcon } from '@chakra-ui/react';
+import { Button, Link } from '@chakra-ui/react';
+import { Link as ReachLink } from '@reach/router';
+
 const UserNameBtn = () => {
   return (
     <Button>
       <Text color="gray.500" fontWeight="semibold" fontSize="xs">
-        <Link href="#">ROGELIO ROLDAN</Link>
+        <Link as={ReachLink} to="/MenuPpal">
+          ROGELIO ROLDAN
+        </Link>
       </Text>
     </Button>
   );
