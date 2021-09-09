@@ -1,18 +1,14 @@
 import React from 'react';
-import { Container, Text } from '@chakra-ui/layout';
+import { Container, Spacer, Text } from '@chakra-ui/layout';
 import {
   Wrap,
   Center,
   VStack,
   Heading,
   WrapItem,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Button,
   HStack,
 } from '@chakra-ui/react';
+import BtnSeleccion from '../components/ui/BtnSeleccion';
 
 const PtosDeVenta = () => {
   return (
@@ -22,16 +18,18 @@ const PtosDeVenta = () => {
           <VStack>
             <Container maxW="sm" centerContent>
               <Heading
-                fontSize="xx-small"
-                fontWeight="bold"
+                fontSize="small"
+                fontWeight="semibold"
                 textTransform="uppercase"
                 color="purple.600"
+                textAlign="center"
               >
-                Puntos de Venta y tipos de comprobantes habilitados para
+                Puntos de Venta y tipos de comprobantes <br /> habilitados para
                 impresión
               </Heading>
             </Container>
-            <HStack>
+            <Spacer />
+            <HStack alignItems="center">
               <Text
                 textTransform="uppercase"
                 fontWeight="semibold"
@@ -39,21 +37,18 @@ const PtosDeVenta = () => {
               >
                 punto de venta a utilizar
               </Text>
-              <Menu>
-                {({ isOpen }) => (
-                  <>
-                    <MenuButton isActive={isOpen}>
-                      {isOpen ? 'Cerrar' : 'Abrir'}
-                    </MenuButton>
-                    <MenuList>
-                      <MenuItem>Download</MenuItem>
-                      <MenuItem onClick={() => alert('Kagebunshin')}>
-                        Create a Copy
-                      </MenuItem>
-                    </MenuList>
-                  </>
-                )}
-              </Menu>{' '}
+              <BtnSeleccion />
+            </HStack>
+            <HStack alignItems="center">
+              <Text
+                alignSelf="flex-start"
+                textTransform="uppercase"
+                fontWeight="semibold"
+                fontSize="small"
+              >
+                tipo de comprobante
+              </Text>
+              <BtnSeleccion />
             </HStack>
           </VStack>
         </Center>
