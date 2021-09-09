@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Stack } from '@chakra-ui/react';
-import { GoChevronRight } from 'react-icons/go';
 
 const BtnGenerico = props => {
   return (
@@ -8,7 +7,7 @@ const BtnGenerico = props => {
       <Button
         width="300px"
         textAlign="left"
-        leftIcon={<GoChevronRight />}
+        leftIcon={props.icon}
         colorScheme="gray"
         variant="outline"
         boxShadow="xs"

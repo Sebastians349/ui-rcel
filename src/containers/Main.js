@@ -3,7 +3,8 @@ import { Stack } from '@chakra-ui/layout';
 // import MainBox from '../components/MainBox';
 // import UserBox from '../components/UserBox';
 import UserBoxFull from '../components/UserBoxFull';
-import MainBoxFull from '../components/MainBoxFull';
+// import MainBoxFull from '../components/MainBoxFull';
+import PtosDeVenta from '../pages/PtosDeVenta';
 
 const Main = () => {
   return (
@@ -16,7 +17,7 @@ const Main = () => {
       height="85vh"
     >
       <UserBoxFull />
-      <MainBoxFull />
+      <PtosDeVenta />
     </Stack>
   );
 };
