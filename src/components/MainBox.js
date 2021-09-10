@@ -1,21 +1,16 @@
 import React from 'react';
-import { VStack, Center, Heading, Wrap, WrapItem } from '@chakra-ui/layout';
-import UserNameBtn from './UserNameBtn';
+import { VStack, Center, Wrap, WrapItem } from '@chakra-ui/layout';
+import BtnUserName from './ui/BtnUserName';
+import MainBoxTitle from './ui/MainBoxTitle';
+
 const MainBox = () => {
   return (
     <Wrap>
       <WrapItem>
         <Center w="400px" h="280px" boxShadow="xl" borderRadius="xl">
           <VStack>
-            <Heading
-              fontSize="xs"
-              fontWeight="medium"
-              textTransform="uppercase"
-              color="purple.600"
-            >
-              Seleccione la empresa a representar
-            </Heading>
-            <UserNameBtn />
+            <MainBoxTitle />
+            <BtnUserName />
           </VStack>
         </Center>
       </WrapItem>

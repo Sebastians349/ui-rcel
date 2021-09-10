@@ -18,10 +18,10 @@ const Main = () => {
       height="auto"
       mb="12"
     >
-      <UserBoxFull />
-      <MenuPpal />
-      {/* <UserBox />
-      <MainBox /> */}
+      {/* <UserBoxFull />
+      <MenuPpal /> */}
+      <UserBox />
+      <MainBox />
     </Stack>
   );
 };

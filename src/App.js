@@ -7,7 +7,7 @@ import Footer from './containers/Footer';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box h="100vh">
+      <Box>
         <Header />
         <Main />
         <Footer />
