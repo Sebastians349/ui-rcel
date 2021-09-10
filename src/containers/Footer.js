@@ -14,7 +14,6 @@ const Footer = () => {
   return (
     <Stack
       direction={['column', 'row']}
-      spacing="24px"
       borderTop="1px"
       borderTopColor="gray.400"
       justifyContent="space-between"
