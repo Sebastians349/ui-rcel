@@ -4,7 +4,8 @@ import { Stack } from '@chakra-ui/layout';
 // import UserBox from '../components/UserBox';
 import UserBoxFull from '../components/UserBoxFull';
 // import MainBoxFull from '../components/MainBoxFull';
-import PtosDeVenta from '../pages/PtosDeVenta';
+// import PtosDeVenta from '../pages/PtosDeVenta';
+import MenuPpal from '../pages/MenuPpal';
 
 const Main = () => {
   return (
@@ -14,10 +15,10 @@ const Main = () => {
       padding={4}
       justifyContent="space-evenly"
       alignItems="center"
-      height="85vh"
+      height="auto"
     >
       <UserBoxFull />
-      <PtosDeVenta />
+      <MenuPpal />
     </Stack>
   );
 };

@@ -21,7 +21,7 @@ const Footer = () => {
       padding="3"
       alignItems="center"
     >
-      <Text fontSize="small" fontWeight="semibold">
+      <Text fontSize="small" fontWeight="semibold" textAlign="center">
         {fecha}
       </Text>
       <Text fontSize="small" fontWeight="semibold" textAlign="center">
