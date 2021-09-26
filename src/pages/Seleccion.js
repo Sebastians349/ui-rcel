@@ -1,9 +1,8 @@
 import React from 'react';
-import { Stack } from '@chakra-ui/layout';
 import MainBox from '../components/MainBox';
 import UserBox from '../components/UserBox';
-
-const Main = () => {
+import { Stack } from '@chakra-ui/layout';
+const Seleccion = () => {
   return (
     <Stack
       direction={['column', 'row']}
@@ -12,12 +11,10 @@ const Main = () => {
       alignItems="center"
       height="80vh"
     >
-      {/* <UserBoxFull />
-      <MenuPpal /> */}
       <UserBox />
       <MainBox />
     </Stack>
   );
 };
 
-export default Main;
+export default Seleccion;

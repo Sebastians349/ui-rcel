@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@chakra-ui/layout';
 import { Button, Link } from '@chakra-ui/react';
-import { Link as ReachLink } from '@reach/router';
+import { Link as ReachLink } from 'react-router-dom';
 
 const UserNameBtn = () => {
   return (
