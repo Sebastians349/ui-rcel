@@ -6,6 +6,7 @@ import Header from './containers/Header';
 import Footer from './containers/Footer';
 import Seleccion from './pages/Seleccion';
 import MenuPpal from './pages/MenuPpal';
+import PtosDeVenta from './pages/PtosDeVenta';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/MenuPpal">
           <MenuPpal />
+        </Route>
+        <Route path="/PtosDeVenta">
+          <PtosDeVenta />
         </Route>
         <Footer />
       </Box>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Stack } from '@chakra-ui/react';
 import { GoNote } from 'react-icons/go';
+import { Link as ReachLink } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 const BtnComprobantes = () => {
   return (
@@ -13,7 +15,9 @@ const BtnComprobantes = () => {
         boxShadow="xs"
         fontSize="sm"
       >
-        Generar comprobantes
+        <Link as={ReachLink} to="/PtosDeVenta">
+          Generar comprobantes
+        </Link>
       </Button>
     </Stack>
   );

@@ -2,8 +2,6 @@ import React from 'react';
 import { Stack } from '@chakra-ui/layout';
 import MainBoxFull from '../components/MainBoxFull';
 import UserBoxFull from '../components/UserBoxFull';
-import Header from '../containers/Header';
-import Footer from '../containers/Footer';
 
 const MenuPpal = () => {
   return (
@@ -12,7 +10,7 @@ const MenuPpal = () => {
       spacing="15px"
       justifyContent="space-evenly"
       alignItems="center"
-      height="auto"
+      height="85vh"
       p={10}
     >
       <UserBoxFull />
