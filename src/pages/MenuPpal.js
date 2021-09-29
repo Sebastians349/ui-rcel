@@ -10,7 +10,7 @@ const MenuPpal = () => {
       spacing="15px"
       justifyContent="space-evenly"
       alignItems="center"
-      height="85vh"
+      height="auto"
       p={10}
     >
       <UserBoxFull />

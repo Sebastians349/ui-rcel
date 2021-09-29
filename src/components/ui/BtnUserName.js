@@ -5,7 +5,7 @@ import { Link as ReachLink } from 'react-router-dom';
 
 const UserNameBtn = () => {
   return (
-    <Button>
+    <Button loadingText="Loading" spinnerPlacement="start">
       <Text color="gray.500" fontWeight="semibold" fontSize="xs">
         <Link as={ReachLink} to="/MenuPpal">
           ROGELIO ROLDAN

@@ -7,7 +7,7 @@ const MainBoxTitle = () => {
       fontSize="xs"
       fontWeight="medium"
       textTransform="uppercase"
-      color="purple.600"
+      color="blue"
     >
       Seleccione la empresa a representar
     </Heading>

@@ -5,7 +5,7 @@ import { BsChevronDoubleRight } from 'react-icons/bs';
 const BtnAdelante = () => {
   return (
     <Button variant="outline" rightIcon={<BsChevronDoubleRight />}>
-      Adelante
+      Continuar
     </Button>
   );
 };

@@ -6,7 +6,7 @@ import { BsChevronDoubleLeft } from 'react-icons/bs';
 const BtnAtras = () => {
   return (
     <Button variant="outline" leftIcon={<BsChevronDoubleLeft />}>
-      Atrás
+      Volver
     </Button>
   );
 };
