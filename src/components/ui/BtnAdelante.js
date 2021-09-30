@@ -4,10 +4,10 @@ import { Link } from '@chakra-ui/layout';
 import { BsChevronDoubleRight } from 'react-icons/bs';
 import { Link as ReachLink } from 'react-router-dom';
 
-const BtnAdelante = () => {
+const BtnAdelante = props => {
   return (
     <Button variant="outline" rightIcon={<BsChevronDoubleRight />}>
-      <Link as={ReachLink} to="/DatosEmision">
+      <Link as={ReachLink} to={props.hacia}>
         Continuar
       </Link>
     </Button>

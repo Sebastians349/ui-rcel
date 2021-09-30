@@ -59,7 +59,7 @@ const PtosDeVenta = () => {
           {/* CHECK SPACING AL CHILD Q NO TOMA */}
           <HStack spacing={10}>
             <BtnAtras hacia="/MenuPpal" />
-            <BtnAdelante />
+            <BtnAdelante hacia="DatosEmision" />
           </HStack>
         </VStack>
       </Center>
