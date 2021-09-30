@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Spacer, Stack, Text } from '@chakra-ui/layout';
+import { Container, Stack, Text } from '@chakra-ui/layout';
 import {
   Center,
   VStack,

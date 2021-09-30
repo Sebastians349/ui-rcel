@@ -8,6 +8,7 @@ import PtosDeVenta from './pages/PtosDeVenta';
 import MainHeader from './containers/MainHeader';
 import DatosEmision from './pages/DatosEmision';
 import DatosReceptor from './pages/DatosReceptor';
+import DatosOperacion from './pages/DatosOperacion';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/DatosReceptor">
             <DatosReceptor />
+          </Route>
+          <Route path="/DatosOperacion">
+            <DatosOperacion />
           </Route>
         </Switch>
         <Footer />

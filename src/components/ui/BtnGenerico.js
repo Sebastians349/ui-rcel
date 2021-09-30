@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from '@chakra-ui/layout';
 import { Button, Stack } from '@chakra-ui/react';
+import { Link as ReachLink } from 'react-router-dom';
 
 const BtnGenerico = props => {
   return (
@@ -13,7 +15,9 @@ const BtnGenerico = props => {
         boxShadow="xs"
         fontSize="sm"
       >
-        {props.name}
+        <Link as={ReachLink} to="/PtosDeVenta">
+          {props.name}
+        </Link>
       </Button>
     </Stack>
   );

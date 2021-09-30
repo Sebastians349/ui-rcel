@@ -18,6 +18,7 @@ const MainBoxFull = props => {
             <BtnGenerico
               icon={<FiFilePlus />}
               name="Datos Adicionales del comprobante"
+              hacia="/PtosDeVenta"
             />
             <BtnGenerico
               icon={<FaRegFilePowerpoint />}
