@@ -1,13 +1,21 @@
 import React from 'react';
-import { Container, Spacer, Stack, Text } from '@chakra-ui/layout';
-import { Center, VStack, Heading, HStack } from '@chakra-ui/react';
-import BtnSeleccion from '../components/ui/BtnSeleccion';
-import UserBoxFull from '../components/UserBoxFull';
-import BtnTipoComp from '../components/ui/BtnTipoComp';
-import BtnAtras from '../components/ui/BtnAtras';
+import {
+  Center,
+  VStack,
+  Stack,
+  Container,
+  Heading,
+  Spacer,
+  HStack,
+  Text,
+} from '@chakra-ui/layout';
 import BtnAdelante from '../components/ui/BtnAdelante';
+import BtnAtras from '../components/ui/BtnAtras';
+import UserBoxFull from '../components/UserBoxFull';
+import BtnSelFecha from '../components/ui/BtnSelFecha';
+import BtnConceptos from '../components/ui/BtnConceptos';
 
-const PtosDeVenta = () => {
+const DatosEmision = () => {
   return (
     <Stack
       direction={['column', 'row']}
@@ -27,38 +35,38 @@ const PtosDeVenta = () => {
               color="purple.600"
               textAlign="center"
             >
-              Puntos de Venta y tipos de comprobantes <br /> habilitados para
-              impresión
+              Datos de emisión. Paso 1 de 4.
             </Heading>
           </Container>
           <Spacer />
           <Spacer />
           <HStack alignItems="center">
             <Text
+              alignSelf="flex-end"
               textTransform="uppercase"
               fontWeight="semibold"
               fontSize="small"
             >
-              punto de venta a utilizar
+              seleccione fecha{' '}
             </Text>
-            <BtnSeleccion />
+            <BtnSelFecha />
           </HStack>
           <HStack alignItems="center">
             <Text
-              alignSelf="flex-start"
+              alignSelf="flex-end"
               textTransform="uppercase"
               fontWeight="semibold"
               fontSize="small"
             >
-              tipo de comprobante
+              conceptos a incluir{' '}
             </Text>
-            <BtnTipoComp />
+            <Spacer />
+            <BtnConceptos />
           </HStack>
           <Spacer />
           <Spacer />
-          {/* CHECK SPACING AL CHILD Q NO TOMA */}
           <HStack spacing={10}>
-            <BtnAtras hacia="/MenuPpal" />
+            <BtnAtras hacia="/PtosDeVenta" />
             <BtnAdelante />
           </HStack>
         </VStack>
@@ -67,4 +75,4 @@ const PtosDeVenta = () => {
   );
 };
 
-export default PtosDeVenta;
+export default DatosEmision;

@@ -1,12 +1,15 @@
-import { Button } from '@chakra-ui/button';
 import React from 'react';
-// import { ChevronLeftIcon } from '@chakra-ui/icons';
+import { Link } from '@chakra-ui/layout';
+import { Button } from '@chakra-ui/button';
+import { Link as ReachLink } from 'react-router-dom';
 import { BsChevronDoubleLeft } from 'react-icons/bs';
 
-const BtnAtras = () => {
+const BtnAtras = props => {
   return (
     <Button variant="outline" leftIcon={<BsChevronDoubleLeft />}>
-      Volver
+      <Link as={ReachLink} to={props.hacia}>
+        Volver
+      </Link>
     </Button>
   );
 };

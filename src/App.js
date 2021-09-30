@@ -6,6 +6,7 @@ import Seleccion from './pages/Seleccion';
 import MenuPpal from './pages/MenuPpal';
 import PtosDeVenta from './pages/PtosDeVenta';
 import MainHeader from './containers/MainHeader';
+import DatosEmision from './pages/DatosEmision';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/PtosDeVenta">
             <PtosDeVenta />
+          </Route>
+          <Route path="/DatosEmision">
+            <DatosEmision />
           </Route>
         </Switch>
         <Footer />
