@@ -1,8 +1,10 @@
 import React from 'react';
 import {
   Center,
+  Box,
   VStack,
   Stack,
+  StackDivider,
   Container,
   Heading,
   Spacer,
@@ -11,11 +13,15 @@ import {
 } from '@chakra-ui/layout';
 import BtnAdelante from '../components/ui/BtnAdelante';
 import BtnAtras from '../components/ui/BtnAtras';
-import UserBoxFull from '../components/UserBoxFull';
-import BtnSelFecha from '../components/ui/BtnSelFecha';
-import BtnConceptos from '../components/ui/BtnConceptos';
+import BtnIva from '../components/ui/BtnIva';
 
 const DatosReceptor = props => {
+  const titulos = [
+    'condicion frente al iva',
+    'Tipo y nro de documento',
+    'domicilio comercial',
+    'email',
+  ];
   return (
     <Stack
       direction={['column', 'row']}
@@ -24,9 +30,13 @@ const DatosReceptor = props => {
       alignItems="center"
       height="85vh"
     >
-      <UserBoxFull />
-      <Center w="400px" h="280px" boxShadow="xl" borderRadius="xl">
-        <VStack>
+      <Center boxShadow="xl" borderRadius="xl">
+        <VStack
+          p={5}
+          divider={<StackDivider borderColor="gray.200" />}
+          spacing={4}
+          align="stretch"
+        >
           <Container maxW="md" centerContent>
             <Heading
               fontSize="small"
@@ -35,36 +45,54 @@ const DatosReceptor = props => {
               color="purple.600"
               textAlign="center"
             >
-              Datos de emisión. Paso 1 de 4.
+              Datos del Receptor. <br /> Paso 2 de 4.
             </Heading>
           </Container>
-          <Spacer />
-          <Spacer />
-          <HStack alignItems="center">
+          <HStack justify="space-between">
             <Text
               alignSelf="flex-end"
               textTransform="uppercase"
               fontWeight="semibold"
               fontSize="small"
             >
-              sfasfasdfasa{' '}
+              {titulos[0]}
             </Text>
-            <BtnSelFecha />
+            <BtnIva />
           </HStack>
-          <HStack alignItems="center">
+          <HStack justify="space-between">
             <Text
               alignSelf="flex-end"
               textTransform="uppercase"
               fontWeight="semibold"
               fontSize="small"
             >
-              asfasdfasd a incluir{' '}
+              {titulos[1]}
             </Text>
-            <Spacer />
-            <BtnConceptos />
+            <BtnIva />
           </HStack>
-          <Spacer />
-          <Spacer />
+          <HStack justify="space-between">
+            <Text
+              alignSelf="flex-end"
+              textTransform="uppercase"
+              fontWeight="semibold"
+              fontSize="small"
+            >
+              {titulos[2]}
+            </Text>
+            <BtnIva />
+          </HStack>
+          <HStack justify="space-between">
+            <Text
+              alignSelf="flex-end"
+              textTransform="uppercase"
+              fontWeight="semibold"
+              fontSize="small"
+            >
+              {titulos[3]}
+            </Text>
+            <BtnIva />
+          </HStack>
+
           <HStack spacing={10}>
             <BtnAtras hacia="/DatosEmision" />
             <BtnAdelante />

@@ -3,6 +3,7 @@ import {
   Center,
   VStack,
   Stack,
+  StackDivider,
   Container,
   Heading,
   Spacer,
@@ -26,7 +27,12 @@ const DatosEmision = () => {
     >
       <UserBoxFull />
       <Center w="400px" h="280px" boxShadow="xl" borderRadius="xl">
-        <VStack>
+        <VStack
+          p={5}
+          divider={<StackDivider borderColor="gray.200" />}
+          spacing={4}
+          align="stretch"
+        >
           <Container maxW="md" centerContent>
             <Heading
               fontSize="small"
@@ -35,11 +41,10 @@ const DatosEmision = () => {
               color="purple.600"
               textAlign="center"
             >
-              Datos de emisión. Paso 1 de 4.
+              Datos de emisión. <br /> Paso 1 de 4.
             </Heading>
           </Container>
-          <Spacer />
-          <Spacer />
+
           <HStack alignItems="center">
             <Text
               alignSelf="flex-end"
@@ -63,8 +68,7 @@ const DatosEmision = () => {
             <Spacer />
             <BtnConceptos />
           </HStack>
-          <Spacer />
-          <Spacer />
+
           <HStack spacing={10}>
             <BtnAtras hacia="/PtosDeVenta" />
             <BtnAdelante hacia="/DatosReceptor" />

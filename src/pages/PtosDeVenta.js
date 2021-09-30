@@ -1,6 +1,12 @@
 import React from 'react';
 import { Container, Spacer, Stack, Text } from '@chakra-ui/layout';
-import { Center, VStack, Heading, HStack } from '@chakra-ui/react';
+import {
+  Center,
+  VStack,
+  Heading,
+  HStack,
+  StackDivider,
+} from '@chakra-ui/react';
 import BtnSeleccion from '../components/ui/BtnSeleccion';
 import UserBoxFull from '../components/UserBoxFull';
 import BtnTipoComp from '../components/ui/BtnTipoComp';
@@ -18,7 +24,12 @@ const PtosDeVenta = () => {
     >
       <UserBoxFull />
       <Center w="400px" h="280px" boxShadow="xl" borderRadius="xl">
-        <VStack>
+        <VStack
+          p={5}
+          divider={<StackDivider borderColor="gray.200" />}
+          spacing={4}
+          align="stretch"
+        >
           <Container maxW="md" centerContent>
             <Heading
               fontSize="small"
@@ -31,9 +42,8 @@ const PtosDeVenta = () => {
               impresión
             </Heading>
           </Container>
-          <Spacer />
-          <Spacer />
-          <HStack alignItems="center">
+
+          <HStack justify="space-between">
             <Text
               textTransform="uppercase"
               fontWeight="semibold"
@@ -43,7 +53,7 @@ const PtosDeVenta = () => {
             </Text>
             <BtnSeleccion />
           </HStack>
-          <HStack alignItems="center">
+          <HStack justify="space-between">
             <Text
               alignSelf="flex-start"
               textTransform="uppercase"
@@ -54,10 +64,8 @@ const PtosDeVenta = () => {
             </Text>
             <BtnTipoComp />
           </HStack>
-          <Spacer />
-          <Spacer />
-          {/* CHECK SPACING AL CHILD Q NO TOMA */}
-          <HStack spacing={10}>
+
+          <HStack justify="space-between">
             <BtnAtras hacia="/MenuPpal" />
             <BtnAdelante hacia="DatosEmision" />
           </HStack>

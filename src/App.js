@@ -7,6 +7,7 @@ import MenuPpal from './pages/MenuPpal';
 import PtosDeVenta from './pages/PtosDeVenta';
 import MainHeader from './containers/MainHeader';
 import DatosEmision from './pages/DatosEmision';
+import DatosReceptor from './pages/DatosReceptor';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/DatosEmision">
             <DatosEmision />
+          </Route>
+          <Route path="/DatosReceptor">
+            <DatosReceptor />
           </Route>
         </Switch>
         <Footer />

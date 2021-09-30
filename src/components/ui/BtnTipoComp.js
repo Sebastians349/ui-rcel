@@ -11,7 +11,7 @@ const BtnTipoComp = () => {
             as={Button}
             colorScheme="teal"
             variant="outline"
-            size="sm"
+            size="xs"
           >
             {isOpen ? 'Cerrar' : '... Abrir'}
           </MenuButton>
