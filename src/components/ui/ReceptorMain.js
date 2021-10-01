@@ -12,10 +12,10 @@ import BtnIva from './BtnIva';
 
 const ReceptorMain = () => {
   const titulos = [
-    'condicion frente al iva',
+    'Condición frente al IVA',
     'Tipo y nro de documento',
-    'domicilio comercial',
-    'email',
+    'Domicilio comercial',
+    'E-mail',
   ];
   return (
     <Center>
@@ -37,45 +37,25 @@ const ReceptorMain = () => {
           </Heading>
         </Container>
         <HStack justify="space-between">
-          <Text
-            alignSelf="flex-end"
-            textTransform="uppercase"
-            fontWeight="semibold"
-            fontSize="small"
-          >
+          <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[0]}
           </Text>
           <BtnIva />
         </HStack>
         <HStack justify="space-between">
-          <Text
-            alignSelf="flex-end"
-            textTransform="uppercase"
-            fontWeight="semibold"
-            fontSize="small"
-          >
+          <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[1]}
           </Text>
           <BtnIva />
         </HStack>
         <HStack justify="space-between">
-          <Text
-            alignSelf="flex-end"
-            textTransform="uppercase"
-            fontWeight="semibold"
-            fontSize="small"
-          >
+          <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[2]}
           </Text>
           <BtnIva />
         </HStack>
         <HStack justify="space-between">
-          <Text
-            alignSelf="flex-end"
-            textTransform="uppercase"
-            fontWeight="semibold"
-            fontSize="small"
-          >
+          <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[3]}
           </Text>
           <BtnIva />

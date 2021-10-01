@@ -13,7 +13,7 @@ const BtnTipoComp = () => {
             variant="outline"
             size="xs"
           >
-            {isOpen ? 'Cerrar' : '... Abrir'}
+            {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList>
             <MenuItem>0001- Factura</MenuItem>
