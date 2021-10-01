@@ -1,28 +1,21 @@
-import { Input } from '@chakra-ui/input';
-import {
-  Container,
-  Stack,
-  Divider,
-  Heading,
-  Text,
-  Center,
-  HStack,
-  VStack,
-} from '@chakra-ui/layout';
+import { Stack, HStack, VStack } from '@chakra-ui/layout';
 import BtnAdelante from '../components/ui/BtnAdelante';
 import BtnAtras from '../components/ui/BtnAtras';
 import React from 'react';
+import OperacionHeader from '../components/ui/OperacionHeader';
+import OperacionInputs from '../components/ui/OperacioInputs';
 
 const DatosOperacion = () => {
   return (
     <Stack
       direction={['column', 'row']}
-      spacing="15px"
-      justifyContent="space-evenly"
       alignItems="center"
+      justifyContent="center"
       height="auto"
     >
       <VStack boxShadow="md" borderRadius="xl" m={5}>
+        <OperacionHeader />
+        <OperacionInputs />
         <HStack padding={5}>
           <BtnAtras hacia="/DatosReceptor" />
           <BtnAdelante hacia="/DatosConfirma" />
