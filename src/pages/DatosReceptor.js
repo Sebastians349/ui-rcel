@@ -15,7 +15,7 @@ const DatosReceptor = props => {
       alignItems="center"
       height="auto"
     >
-      <VStack boxShadow="xl" borderRadius="xl" m={5}>
+      <VStack boxShadow="md" borderRadius="xl" m={5}>
         <ReceptorMain />
         <ReceptorCondi />
         <ReceptorFooter />

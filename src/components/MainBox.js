@@ -8,7 +8,7 @@ const MainBox = () => {
   return (
     <Wrap>
       <WrapItem>
-        <Center w="400px" h="280px" boxShadow="xl" borderRadius="xs">
+        <Center w="400px" h="280px" boxShadow="md" borderRadius="xs">
           <VStack>
             <MainBoxTitle />
             <Spacer />

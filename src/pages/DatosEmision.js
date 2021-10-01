@@ -26,7 +26,7 @@ const DatosEmision = () => {
       height="85vh"
     >
       <UserBoxFull />
-      <Center w="400px" h="280px" boxShadow="xl" borderRadius="xl">
+      <Center w="400px" h="280px" boxShadow="md" borderRadius="xl">
         <VStack
           p={5}
           divider={<StackDivider borderColor="gray.200" />}

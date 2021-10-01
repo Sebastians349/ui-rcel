@@ -11,7 +11,7 @@ const MainBoxFull = props => {
   return (
     <Wrap>
       <WrapItem>
-        <Center padding={4} boxShadow="xl" borderRadius="xl">
+        <Center padding={4} boxShadow="md" borderRadius="xl">
           <VStack>
             <BtnComprobantes />
             <BtnConsultas />
