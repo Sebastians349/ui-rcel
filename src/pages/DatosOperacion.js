@@ -3,7 +3,7 @@ import BtnAdelante from '../components/ui/BtnAdelante';
 import BtnAtras from '../components/ui/BtnAtras';
 import React from 'react';
 import OperacionHeader from '../components/ui/OperacionHeader';
-import OperacionInputs from '../components/ui/OperacioInputs';
+import OperacionFilaInputs from '../components/ui/OperacionFilaInputs';
 
 const DatosOperacion = () => {
   return (
@@ -15,7 +15,9 @@ const DatosOperacion = () => {
     >
       <VStack boxShadow="md" borderRadius="xl" m={5}>
         <OperacionHeader />
-        <OperacionInputs />
+        <VStack p={1}>
+          <OperacionFilaInputs />
+        </VStack>
         <HStack padding={5}>
           <BtnAtras hacia="/DatosReceptor" />
           <BtnAdelante hacia="/DatosConfirma" />
