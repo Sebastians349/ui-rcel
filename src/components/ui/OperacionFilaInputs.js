@@ -1,6 +1,6 @@
 import React from 'react';
 import Inputcodigo from './InputCodigo';
-import { HStack, Flex } from '@chakra-ui/layout';
+import { HStack, Flex, Stack } from '@chakra-ui/layout';
 import InputProd from './InputProd';
 import BtnElimina from './BtnElimina';
 import InputCantidad from './InputCantidad';
@@ -12,7 +12,7 @@ import ImpSubTotal from './ImpSubTotal';
 
 const OperacionFilaInputs = () => {
   return (
-    <HStack>
+    <Stack direction={['column', 'row']}>
       <Inputcodigo />;
       <InputProd />
       <InputCantidad />
@@ -24,7 +24,7 @@ const OperacionFilaInputs = () => {
       <Flex alignSelf="flex-end">
         <BtnElimina />
       </Flex>
-    </HStack>
+    </Stack>
   );
 };
 
