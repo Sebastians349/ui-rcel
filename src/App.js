@@ -9,6 +9,7 @@ import MainHeader from './containers/MainHeader';
 import DatosEmision from './pages/DatosEmision';
 import DatosReceptor from './pages/DatosReceptor';
 import DatosOperacion from './pages/DatosOperacion';
+import DatosConfirma from './pages/DatosConfirma';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/DatosOperacion">
             <DatosOperacion />
+          </Route>
+          <Route path="/DatosConfirma">
+            <DatosConfirma />
           </Route>
         </Switch>
         <Footer />
