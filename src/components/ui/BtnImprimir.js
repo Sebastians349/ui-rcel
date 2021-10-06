@@ -11,6 +11,11 @@ import {
   ModalCloseButton,
   useDisclosure,
   Center,
+  Alert,
+  AlertIcon,
+  AlertDialog,
+  AlertTitle,
+  AlertDescription,
 } from '@chakra-ui/react';
 import { BsChevronDoubleLeft } from 'react-icons/bs';
 
@@ -46,11 +51,7 @@ const BtnImprimir = () => {
               >
                 Volver
               </Button>
-              <Button
-                variant="outline"
-                leftIcon={<AiOutlinePrinter />}
-                onClick={() => alert('Comprobante Generado')}
-              >
+              <Button variant="outline" leftIcon={<AiOutlinePrinter />}>
                 Confirmar
               </Button>
             </ModalFooter>

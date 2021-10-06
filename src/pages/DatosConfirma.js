@@ -1,7 +1,8 @@
 import React from 'react';
-import { Stack, HStack } from '@chakra-ui/layout';
+import { Stack, HStack, VStack } from '@chakra-ui/layout';
 import BtnAtras from '../components/ui/BtnAtras';
 import BtnImprimir from '../components/ui/BtnImprimir';
+import Factura from '../components/ui/Factura';
 const DatosConfirma = () => {
   return (
     <Stack
@@ -10,10 +11,13 @@ const DatosConfirma = () => {
       justifyContent="center"
       height="auto"
     >
-      <HStack padding={1}>
-        <BtnAtras hacia="/DatosOperacion" />
-        <BtnImprimir />
-      </HStack>
+      <VStack padding={3}>
+        <Factura />
+        <HStack padding={3}>
+          <BtnAtras hacia="/DatosOperacion" />
+          <BtnImprimir />
+        </HStack>
+      </VStack>
     </Stack>
   );
 };
