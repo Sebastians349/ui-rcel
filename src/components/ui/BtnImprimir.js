@@ -11,17 +11,12 @@ import {
   ModalCloseButton,
   useDisclosure,
   Center,
-  Alert,
-  AlertIcon,
-  AlertDialog,
-  AlertTitle,
-  AlertDescription,
 } from '@chakra-ui/react';
 import { BsChevronDoubleLeft } from 'react-icons/bs';
+import AlertaOk from './AlertaOk';
 
 const BtnImprimir = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   return (
     <>
       <Button
@@ -31,13 +26,10 @@ const BtnImprimir = () => {
       >
         Generar Comprobante
       </Button>
-
       <Modal isOpen={isOpen} onClose={onClose} closeOnOverlayClick={false}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader textAlign="center">
-            ¿Confirma e imprime comprobante?
-          </ModalHeader>
+          <ModalHeader textAlign="center">{<AlertaOk />}</ModalHeader>
           <ModalCloseButton />
           <ModalBody></ModalBody>
 
@@ -51,9 +43,11 @@ const BtnImprimir = () => {
               >
                 Volver
               </Button>
-              <Button variant="outline" leftIcon={<AiOutlinePrinter />}>
-                Confirmar
-              </Button>
+              <Button
+                onClick={() => alert('Prenda la impresora...😑')}
+                variant="outline"
+                leftIcon={<AiOutlinePrinter />}
+              ></Button>
             </ModalFooter>
           </Center>
         </ModalContent>
