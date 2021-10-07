@@ -12,7 +12,7 @@ const DatosConfirma = () => {
       height="auto"
     >
       <VStack padding={3}>
-        <Factura />
+        <Factura />|
         <HStack padding={3}>
           <BtnAtras hacia="/DatosOperacion" />
           <BtnImprimir />

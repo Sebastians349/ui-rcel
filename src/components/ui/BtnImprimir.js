@@ -47,7 +47,9 @@ const BtnImprimir = () => {
                 onClick={() => alert('Prenda la impresora...😑')}
                 variant="outline"
                 leftIcon={<AiOutlinePrinter />}
-              ></Button>
+              >
+                Imprimir
+              </Button>
             </ModalFooter>
           </Center>
         </ModalContent>
