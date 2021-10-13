@@ -4,7 +4,7 @@ import BtnUserName from './ui/BtnUserName';
 import MainBoxTitle from './ui/MainBoxTitle';
 import { Spacer } from '@chakra-ui/react';
 
-const MainBox = () => {
+const MainBox = props => {
   return (
     <Wrap>
       <WrapItem>
@@ -13,7 +13,7 @@ const MainBox = () => {
             <MainBoxTitle />
             <Spacer />
             <Spacer />
-            <BtnUserName />
+            <BtnUserName></BtnUserName>
           </VStack>
         </Center>
       </WrapItem>
