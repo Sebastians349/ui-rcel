@@ -1,6 +1,6 @@
 import React from 'react';
 import Inputcodigo from './InputCodigo';
-import { HStack, Flex, Stack } from '@chakra-ui/layout';
+import { Flex, Stack } from '@chakra-ui/layout';
 import InputProd from './InputProd';
 import BtnElimina from './BtnElimina';
 import InputCantidad from './InputCantidad';

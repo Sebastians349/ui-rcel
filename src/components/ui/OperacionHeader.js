@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, Heading, Stack, Divider, Text } from '@chakra-ui/layout';
+import { HStack, Heading, Stack, Divider } from '@chakra-ui/layout';
 
 const OperacionHeader = () => {
   return (

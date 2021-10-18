@@ -9,7 +9,7 @@ const Seleccion = () => {
       spacing="15px"
       justifyContent="space-evenly"
       alignItems="center"
-      height="80vh"
+      height="88vh"
     >
       <UserBox />
       <MainBox />

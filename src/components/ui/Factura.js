@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, VStack, Stack, Text, Divider } from '@chakra-ui/layout';
+import { Stack } from '@chakra-ui/layout';
 import { StackDivider } from '@chakra-ui/layout';
 import FacturaHeader from './FacturaHeader';
 import FacturaSubHeader from './FacturaSubHeader';
