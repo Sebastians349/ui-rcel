@@ -20,6 +20,7 @@ const BtnImprimir = () => {
   return (
     <>
       <Button
+        size="sm"
         onClick={onOpen}
         variant="outline"
         leftIcon={<AiOutlinePrinter />}

@@ -7,18 +7,18 @@ import { Link } from 'react-router-dom';
 const BtnComprobantes = () => {
   return (
     <Stack direction="row" spacing={4}>
-      <Link as={ReachLink} to="/PtosDeVenta">
-        <Button
-          size="xs"
-          leftIcon={<GoNote />}
-          colorScheme="gray"
-          variant="outline"
-          boxShadow="xs"
-          fontSize="sm"
-        >
+      <Button
+        width="300px"
+        leftIcon={<GoNote />}
+        colorScheme="gray"
+        variant="outline"
+        boxShadow="xs"
+        fontSize="sm"
+      >
+        <Link as={ReachLink} to="/PtosDeVenta">
           Generar comprobantes
-        </Button>
-      </Link>
+        </Link>
+      </Button>
     </Stack>
   );
 };

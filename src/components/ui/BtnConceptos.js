@@ -15,8 +15,8 @@ const BtnConceptos = () => {
             {isOpen ? 'Cerrar' : '... Abrir'}
           </MenuButton>
           <MenuList>
-            <MenuItem>0001-Productos</MenuItem>
-            <MenuItem>000-Servicios </MenuItem>
+            <MenuItem>0001 - Productos</MenuItem>
+            <MenuItem>0002 - Servicios </MenuItem>
           </MenuList>
         </>
       )}

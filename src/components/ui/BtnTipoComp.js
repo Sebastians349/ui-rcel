@@ -15,7 +15,7 @@ const BtnTipoComp = () => {
           >
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
-          <MenuList>
+          <MenuList size="sm">
             <MenuItem>0001- Factura</MenuItem>
             <MenuItem>0002- Nota de Crédito</MenuItem>
             <MenuItem>0003- Nota de Débito</MenuItem>

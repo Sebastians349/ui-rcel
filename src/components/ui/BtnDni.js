@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
-const BtnSeleccion = () => {
+
+const BtnDni = () => {
   return (
     <Menu>
       {({ isOpen }) => (
@@ -15,15 +16,18 @@ const BtnSeleccion = () => {
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList>
-            <MenuItem>0001- Pasaje Kdorna 1998</MenuItem>
-            <MenuItem>0002- Malabia 1488</MenuItem>
-            <MenuItem onClick={() => alert('No Autorizado')}>
-              Nuevo punto de venta
-            </MenuItem>
+            <MenuItem>DNI / Libreta Electoral</MenuItem>
+            <MenuItem>Carnet de Extranjero</MenuItem>
+            <MenuItem>Registro Único de Contribuyentes</MenuItem>
+            <MenuItem>Pasaporte</MenuItem>
+            <MenuItem>Partida de Nacimiento</MenuItem>
+            <MenuItem>Libreta de enrolamiento</MenuItem>
+            <MenuItem>Otros...</MenuItem>
           </MenuList>
         </>
       )}
     </Menu>
   );
 };
-export default BtnSeleccion;
+
+export default BtnDni;

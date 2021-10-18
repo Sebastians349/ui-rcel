@@ -9,13 +9,16 @@ import {
   Text,
 } from '@chakra-ui/layout';
 import BtnIva from './BtnIva';
+import BtnDni from './BtnDni';
+import BtnDomic from './BtnDomic';
 
 const ReceptorMain = () => {
   const titulos = [
     'Condición frente al IVA',
-    'Tipo y nro de documento',
+    'Tipo de documento',
     'Domicilio comercial',
     'E-mail',
+    // lo pase como array, para una futura funcionalidad que ahora no recuerdo 😶
   ];
   return (
     <Center>
@@ -46,13 +49,13 @@ const ReceptorMain = () => {
           <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[1]}
           </Text>
-          <BtnIva />
+          <BtnDni />
         </HStack>
         <HStack justify="space-between">
           <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[2]}
           </Text>
-          <BtnIva />
+          <BtnDomic />
         </HStack>
         <HStack justify="space-between">
           <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">

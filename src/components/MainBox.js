@@ -53,6 +53,7 @@ const MainBox = props => {
               fontSize="xs"
               fontWeight="semibold"
               textTransform="uppercase"
+              color="purple.600"
             >
               Seleccione la empresa a representar
             </Heading>

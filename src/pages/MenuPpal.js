@@ -11,7 +11,6 @@ const MenuPpal = () => {
       justifyContent="space-evenly"
       alignItems="center"
       height="88vh"
-      p={10}
     >
       <UserBoxFull />
       <MainBoxFull />
