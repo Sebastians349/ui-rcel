@@ -21,7 +21,7 @@ const DatosOperacion = () => {
     >
       <VStack boxShadow="md" borderRadius="xl" m={5}>
         <OperacionHeader />
-        <OperacionFilaInputs />
+        <OperacionFilaInputs padding={1} />
         <VStack p={1}>
           {filaInputs.map((item, i) => (
             <HStack key={i}>{item}</HStack>

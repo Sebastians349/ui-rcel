@@ -11,6 +11,7 @@ import {
 import BtnIva from './BtnIva';
 import BtnDni from './BtnDni';
 import BtnDomic from './BtnDomic';
+import BtnEmail from './BtnEmail';
 
 const ReceptorMain = () => {
   const titulos = [
@@ -61,7 +62,7 @@ const ReceptorMain = () => {
           <Text alignSelf="flex-end" fontWeight="semibold" fontSize="small">
             {titulos[3]}
           </Text>
-          <BtnIva />
+          <BtnEmail />
         </HStack>
       </VStack>
     </Center>
