@@ -69,7 +69,7 @@ const DatosEmision = () => {
             <BtnConceptos />
           </HStack>
 
-          <HStack spacing={10}>
+          <HStack justify="space-evenly" p={3}>
             <BtnAtras hacia="/PtosDeVenta" />
             <BtnAdelante hacia="/DatosReceptor" />
           </HStack>

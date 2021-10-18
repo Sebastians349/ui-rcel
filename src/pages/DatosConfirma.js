@@ -9,11 +9,11 @@ const DatosConfirma = () => {
       direction={['column', 'row']}
       alignItems="center"
       justifyContent="center"
-      height="auto"
+      height="85vh"
     >
       <VStack padding={3}>
         <Factura />|
-        <HStack padding={3}>
+        <HStack justify="space-evenly" p={3}>
           <BtnAtras hacia="/DatosOperacion" />
           <BtnImprimir />
         </HStack>

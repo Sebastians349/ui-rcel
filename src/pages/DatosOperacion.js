@@ -17,10 +17,11 @@ const DatosOperacion = () => {
       direction={['column', 'row']}
       alignItems="center"
       justifyContent="center"
-      height="auto"
+      height="85vh"
     >
       <VStack boxShadow="md" borderRadius="xl" m={5}>
         <OperacionHeader />
+        <OperacionFilaInputs />
         <VStack p={1}>
           {filaInputs.map((item, i) => (
             <HStack key={i}>{item}</HStack>
@@ -31,7 +32,7 @@ const DatosOperacion = () => {
             Agregar línea descripción
           </Button>
         </Center>
-        <HStack padding={5}>
+        <HStack justify="space-evenly" p={3}>
           <BtnAtras hacia="/DatosReceptor" />
           <BtnAdelante hacia="/DatosConfirma" />
         </HStack>

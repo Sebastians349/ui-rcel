@@ -1,11 +1,13 @@
 import React from 'react';
-import { VStack, Center, Wrap, WrapItem } from '@chakra-ui/layout';
+import { HStack, VStack, Center, Wrap, WrapItem } from '@chakra-ui/layout';
 import BtnComprobantes from './ui/BtnComprobantes';
 import BtnConsultas from './ui/BtnConsultas';
 import BtnGenerico from './ui/BtnGenerico';
 import { FiFilePlus } from 'react-icons/fi';
 import { FaRegFilePowerpoint } from 'react-icons/fa';
 import { GiSmokeBomb, GiMilkCarton, GiCow, GiSugarCane } from 'react-icons/gi';
+import BtnAdelante from '../components/ui/BtnAdelante';
+import BtnAtras from '../components/ui/BtnAtras';
 
 const MainBoxFull = props => {
   return (
@@ -40,6 +42,10 @@ const MainBoxFull = props => {
               icon={<GiCow />}
               name="Hacienda - Liquidación electrónica"
             />
+            <HStack justify="space-evenly" p={3}>
+              <BtnAtras hacia="/home" />
+              <BtnAdelante hacia="PtosDeVenta" />
+            </HStack>
           </VStack>
         </Center>
       </WrapItem>

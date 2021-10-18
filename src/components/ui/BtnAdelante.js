@@ -6,7 +6,7 @@ import { Link as ReachLink } from 'react-router-dom';
 
 const BtnAdelante = props => {
   return (
-    <Button variant="outline" rightIcon={<BsChevronDoubleRight />}>
+    <Button size="sm" variant="outline" rightIcon={<BsChevronDoubleRight />}>
       <Link as={ReachLink} to={props.hacia}>
         Continuar
       </Link>

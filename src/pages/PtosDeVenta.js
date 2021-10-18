@@ -65,7 +65,7 @@ const PtosDeVenta = () => {
             <BtnTipoComp />
           </HStack>
 
-          <HStack justify="space-between">
+          <HStack justify="space-evenly" p={3}>
             <BtnAtras hacia="/MenuPpal" />
             <BtnAdelante hacia="DatosEmision" />
           </HStack>

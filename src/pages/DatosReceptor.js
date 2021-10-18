@@ -19,7 +19,7 @@ const DatosReceptor = props => {
         <ReceptorMain />
         <ReceptorCondi />
         <ReceptorFooter />
-        <HStack padding={5}>
+        <HStack justify="space-evenly" p={3}>
           <BtnAtras hacia="/DatosEmision" />
           <BtnAdelante hacia="/DatosOperacion" />
         </HStack>

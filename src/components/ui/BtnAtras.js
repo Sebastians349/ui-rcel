@@ -6,11 +6,11 @@ import { BsChevronDoubleLeft } from 'react-icons/bs';
 
 const BtnAtras = props => {
   return (
-    <Button variant="outline" leftIcon={<BsChevronDoubleLeft />}>
-      <Link as={ReachLink} to={props.hacia}>
+    <Link as={ReachLink} to={props.hacia}>
+      <Button size="sm" variant="outline" leftIcon={<BsChevronDoubleLeft />}>
         Volver
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   );
 };
 
