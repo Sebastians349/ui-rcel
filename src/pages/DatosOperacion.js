@@ -8,8 +8,9 @@ import OperacionFilaInputs from '../components/ui/OperacionFilaInputs';
 
 const DatosOperacion = () => {
   const [filaInputs, setfilaInputs] = useState([]);
+
   const addFilaInputs = () => {
-    setfilaInputs(filaInputs => [...filaInputs, <OperacionFilaInputs />]);
+    setfilaInputs((filaInputs) => [...filaInputs, <OperacionFilaInputs />]);
   };
 
   return (
@@ -17,7 +18,7 @@ const DatosOperacion = () => {
       direction={['column', 'row']}
       alignItems="center"
       justifyContent="center"
-      height="85vh"
+      height="95vh"
     >
       <VStack boxShadow="md" borderRadius="xl" m={5}>
         <OperacionHeader />

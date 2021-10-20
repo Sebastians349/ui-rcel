@@ -12,7 +12,7 @@ import ImpSubTotal from './ImpSubTotal';
 
 const OperacionFilaInputs = () => {
   return (
-    <Stack direction={['column', 'row']}>
+    <Stack direction="row">
       <Inputcodigo />;
       <InputProd />
       <InputCantidad />
