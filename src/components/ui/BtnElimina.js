@@ -2,7 +2,8 @@ import React from 'react';
 import { Button } from '@chakra-ui/button';
 
 const BtnElimina = () => {
-  const eliminaFila = (id) => console.log('anda');
+  // CHECK TODO FALTA IMPLEMENTAR EL FILTER()
+  const eliminaFila = id => console.log(id);
 
   return (
     <Button variant="outline" size="xs" onClick={eliminaFila}>

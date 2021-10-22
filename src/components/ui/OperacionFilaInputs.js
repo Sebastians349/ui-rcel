@@ -10,10 +10,10 @@ import ImpBonif from './ImpBonif';
 import ImpBonifTotal from './ImpBonifTotal';
 import ImpSubTotal from './ImpSubTotal';
 
-const OperacionFilaInputs = () => {
+const OperacionFilaInputs = props => {
   return (
     <Stack direction="row">
-      <Inputcodigo />;
+      <Inputcodigo />
       <InputProd />
       <InputCantidad />
       <InputMedida />

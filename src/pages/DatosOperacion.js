@@ -10,9 +10,9 @@ const DatosOperacion = () => {
   const [filaInputs, setfilaInputs] = useState([]);
 
   const addFilaInputs = () => {
-    setfilaInputs((filaInputs) => [...filaInputs, <OperacionFilaInputs />]);
+    setfilaInputs(filaInputs => [...filaInputs, <OperacionFilaInputs />]);
   };
-
+  // TODO FALTA ELIMINAR Y GUARDAR INPUTS.
   return (
     <Stack
       direction={['column', 'row']}
