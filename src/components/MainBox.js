@@ -33,7 +33,7 @@ const MainBox = props => {
               <Input
                 name="nombre"
                 type="text"
-                size="xs"
+                size="md"
                 placeholder="Ingrese su nombre
                 "
                 onChange={handleInputChange}
@@ -42,7 +42,7 @@ const MainBox = props => {
               <Input
                 name="cuit"
                 type="number"
-                size="xs"
+                size="md"
                 placeholder="Ingrese su Cuit
                 "
                 onChange={handleInputChange}
