@@ -13,8 +13,8 @@ const UserNameBtn = props => {
         spinnerPlacement="start"
         rightIcon={<BsChevronDoubleRight />}
       >
-        <Text color="gray.500" fontWeight="semibold" fontSize="xs">
-          {props.categ}{' '}
+        <Text fontWeight="semibold" fontSize="xs">
+          {props.user}-{props.cuit}
         </Text>
       </Button>
     </Link>

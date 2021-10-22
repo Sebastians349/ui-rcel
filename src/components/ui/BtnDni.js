@@ -1,5 +1,12 @@
 import React from 'react';
-import { Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
+import {
+  Menu,
+  MenuButton,
+  MenuItemOption,
+  MenuOptionGroup,
+  MenuList,
+  Button,
+} from '@chakra-ui/react';
 
 const BtnDni = () => {
   return (
@@ -16,13 +23,21 @@ const BtnDni = () => {
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList>
-            <MenuItem>DNI / Libreta Electoral</MenuItem>
-            <MenuItem>Carnet de Extranjero</MenuItem>
-            <MenuItem>Registro Único de Contribuyentes</MenuItem>
-            <MenuItem>Pasaporte</MenuItem>
-            <MenuItem>Partida de Nacimiento</MenuItem>
-            <MenuItem>Libreta de enrolamiento</MenuItem>
-            <MenuItem>Otros...</MenuItem>
+            <MenuOptionGroup title="Seleccione" type="radio">
+              <MenuItemOption value="dni">
+                DNI / Libreta Electoral
+              </MenuItemOption>
+              <MenuItemOption value="caex">Carnet de Extranjero</MenuItemOption>
+              <MenuItemOption value="ruc">
+                Registro Único de Contribuyentes
+              </MenuItemOption>
+              <MenuItemOption value="pas">Pasaporte</MenuItemOption>
+              <MenuItemOption value="par">Partida de Nacimiento</MenuItemOption>
+              <MenuItemOption value="lien">
+                Libreta de enrolamiento
+              </MenuItemOption>
+              <MenuItemOption value="Otros">Otros...</MenuItemOption>
+            </MenuOptionGroup>
           </MenuList>
         </>
       )}

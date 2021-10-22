@@ -1,5 +1,12 @@
 import React from 'react';
-import { Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
+import {
+  Menu,
+  MenuButton,
+  MenuItemOption,
+  MenuOptionGroup,
+  MenuList,
+  Button,
+} from '@chakra-ui/react';
 
 const BtnSiNo = () => {
   return (
@@ -16,8 +23,10 @@ const BtnSiNo = () => {
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList fontSize="small" alignSelf="center">
-            <MenuItem textAlign="center">Si</MenuItem>
-            <MenuItem>No</MenuItem>
+            <MenuOptionGroup title="Seleccione" type="radio">
+              <MenuItemOption value="si">Si</MenuItemOption>
+              <MenuItemOption value="no">No</MenuItemOption>
+            </MenuOptionGroup>
           </MenuList>
         </>
       )}

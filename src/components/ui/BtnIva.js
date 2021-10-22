@@ -1,5 +1,12 @@
 import React from 'react';
-import { Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
+import {
+  Menu,
+  MenuButton,
+  MenuItemOption,
+  MenuList,
+  Button,
+  MenuOptionGroup,
+} from '@chakra-ui/react';
 const BtnIva = () => {
   return (
     <Menu>
@@ -15,15 +22,21 @@ const BtnIva = () => {
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList>
-            <MenuItem>IVA Responsable Inscripto</MenuItem>
-            <MenuItem>IVA Sujeto Exento</MenuItem>
-            <MenuItem>Consumidor Final</MenuItem>
-            <MenuItem>Responsable Monotributo</MenuItem>
-            <MenuItem>Sujeto No Categorizado</MenuItem>
-            <MenuItem>Proveedor del Exterior</MenuItem>
-            <MenuItem>Cliente del Exterior</MenuItem>
-            <MenuItem>Monotributista Social</MenuItem>
-            <MenuItem>Otros...</MenuItem>
+            <MenuOptionGroup title="Seleccione" type="radio">
+              <MenuItemOption value="ra">
+                IVA Responsable Inscripto
+              </MenuItemOption>
+              <MenuItemOption value="se">IVA Sujeto Exento</MenuItemOption>
+              <MenuItemOption value="cf">Consumidor Final</MenuItemOption>
+              <MenuItemOption value="rm">
+                Responsable Monotributo
+              </MenuItemOption>
+              <MenuItemOption value="no">Sujeto No Categorizado</MenuItemOption>
+              <MenuItemOption value="pe">Proveedor del Exterior</MenuItemOption>
+              <MenuItemOption value="ce">Cliente del Exterior</MenuItemOption>
+              <MenuItemOption value="ms">Monotributista Social</MenuItemOption>
+              <MenuItemOption value="Otros">Otros...</MenuItemOption>
+            </MenuOptionGroup>
           </MenuList>
         </>
       )}

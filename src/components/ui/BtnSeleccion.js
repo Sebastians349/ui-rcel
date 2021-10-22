@@ -1,5 +1,12 @@
 import React from 'react';
-import { Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
+import {
+  Menu,
+  MenuButton,
+  MenuItemOption,
+  MenuList,
+  Button,
+  MenuOptionGroup,
+} from '@chakra-ui/react';
 const BtnSeleccion = () => {
   return (
     <Menu>
@@ -15,11 +22,18 @@ const BtnSeleccion = () => {
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
           <MenuList>
-            <MenuItem>0001- Pasaje Kdorna 1998</MenuItem>
-            <MenuItem>0002- Malabia 1488</MenuItem>
-            <MenuItem onClick={() => alert('No Autorizado')}>
-              Nuevo punto de venta
-            </MenuItem>
+            <MenuOptionGroup title="Seleccione" type="radio">
+              <MenuItemOption value="dir1">
+                0001- Pasaje Kdorna 1998
+              </MenuItemOption>
+              <MenuItemOption value="dir2">0002- Malabia 1488</MenuItemOption>
+              <MenuItemOption
+                value="nuevo"
+                onClick={() => alert('No Autorizado')}
+              >
+                Nuevo punto de venta
+              </MenuItemOption>
+            </MenuOptionGroup>
           </MenuList>
         </>
       )}

@@ -1,5 +1,12 @@
 import React from 'react';
-import { MenuButton, Menu, MenuList, MenuItem } from '@chakra-ui/menu';
+import {
+  MenuButton,
+  Menu,
+  MenuList,
+  MenuItem,
+  MenuOptionGroup,
+  MenuItemOption,
+} from '@chakra-ui/menu';
 import { Button } from '@chakra-ui/button';
 const BtnTipoComp = () => {
   return (
@@ -15,17 +22,25 @@ const BtnTipoComp = () => {
           >
             {isOpen ? 'Cerrar' : 'Abrir'}
           </MenuButton>
-          <MenuList size="sm">
-            <MenuItem>0001- Factura</MenuItem>
-            <MenuItem>0002- Nota de Crédito</MenuItem>
-            <MenuItem>0003- Nota de Débito</MenuItem>
-            <MenuItem
-              onClick={() =>
-                alert('Debe seleccionar una opción de las anteriores')
-              }
-            >
-              Otros...{' '}
-            </MenuItem>
+
+          <MenuList>
+            <MenuOptionGroup title="Seleccione" type="radio">
+              <MenuItemOption value="factura">0001- Factura</MenuItemOption>
+              <MenuItemOption value="notacred">
+                0002- Nota de Crédito
+              </MenuItemOption>
+              <MenuItemOption value="notadeb">
+                0003- Nota de Débito
+              </MenuItemOption>
+              <MenuItemOption
+                value="otros"
+                onClick={() =>
+                  alert('Debe seleccionar una opción de las anteriores')
+                }
+              >
+                Otros...{' '}
+              </MenuItemOption>
+            </MenuOptionGroup>
           </MenuList>
         </>
       )}

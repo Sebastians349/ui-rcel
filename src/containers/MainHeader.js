@@ -42,6 +42,7 @@ const MainHeader = () => {
         <Link alignSelf="center" as={ReachLink} to="/home">
           Inicio
         </Link>
+        {/* TODO FALTAN DEFINIR */}
         <Link alignSelf="center">Documentación</Link>
         <Link alignSelf="center">Ayuda</Link>
       </Stack>
