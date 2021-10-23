@@ -59,7 +59,11 @@ const MainBox = props => {
             </Heading>
             <Spacer />
 
-            <BtnUserName user={user.nombre} cuit={user.cuit} />
+            <BtnUserName
+              textTransform="uppercase"
+              user={user.nombre}
+              cuit={user.cuit}
+            />
           </VStack>
         </Center>
       </WrapItem>
